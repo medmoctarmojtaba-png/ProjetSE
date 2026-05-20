@@ -1,11 +1,29 @@
-version: '3.8'
 services:
-  db:
+  mysql_database:
     image: mysql:8.0
+    restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: projetdb
+      MYSQL_DATABASE: wp_db
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: 1234
     volumes:
-      - db_data:/var/lib/mysql
+            - mysql:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+            - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: mysql_database:3306
+      WORDPRESS_DB_USER: wp_user
+      WORDPRESS_DB_PASSWORD: 1234
+      WORDPRESS_DB_NAME: wp_db
+    volumes:
+            - ./:/var/www/html
+    depends_on:
+            - mysql_database
+
 volumes:
-  db_data:
+  mysql:
