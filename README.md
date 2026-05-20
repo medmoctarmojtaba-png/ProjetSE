@@ -1,11 +1,39 @@
-### 1.Presentation du projet
+# LIU-2026 Challenge Technique
+## Administration Linux & Orchestration Docker
 
-Le projet combine trois composants techniques principaux :
+> Projet académique du module **LIU-2026** dirigé par **Dr. EL BENANY Mohamed Mahmoud**.  
+> Un projet complet et très formateur visant à maîtriser l'administration Linux, la programmation système et l'orchestration avec Docker.
 
- -Automatisation Bash .
- -Simulation d'ordonnancement CPU avec comparaison entre Round Robin et SRTF.
- -Infrastructure Docker utilisant une image Debian personnalisee, MySQL, Apache et des operations CRUD automatisees.
+---
 
-La version actuelle du projet execute le script Bash d'administration et le simulateur Python depuis l'environnement Debian Docker. Cela rend les tests plus surs, plus reproductibles et plus proches d'un laboratoire reel.
+## 🎯 Objectif du Projet
 
-### 2.Membres du projet
+L'objectif principal de ce challenge est de développer des compétences pratiques en :
+
+- Administration système Linux
+- Programmation Shell Bash
+- Simulation des algorithmes d’ordonnancement CPU
+- Conteneurisation et orchestration Docker
+- Gestion de projet avec Git
+- Documentation technique
+
+---
+
+## 📦 Structure Générale du Projet
+
+LIU-2026/
+│
+├── script.sh  
+├── schudlingcpu.py
+├── docker-compose.yml
+│
+├── mysql.sql
+│
+├── video/
+│   └── demo.mp4
+│
+└── README.md
+## 👥 Membres du Groupe
+- AHMED CHARGHI
+- ATIGH LEKBEID
+- MED MOCTAR MOJTABA
