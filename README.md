@@ -1,4 +1,4 @@
-### . Presentation du projet
+### 1.Presentation du projet
 
 Ce depot contient l'implementation du mini-projet System Architect Lab. Le projet combine trois composants techniques principaux :
 
